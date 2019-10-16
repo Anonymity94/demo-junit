@@ -1,0 +1,46 @@
+{
+  "name": "junit-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:mocha": "mocha --recursive ./tests/mocha/*.test.js",
+    "test:jest": "jest ./tests/jest/*.test.js",
+    "test:jest-coverage": "jest --coverage ./tests/jest/*.test.js"
+  },
+  "jest": {
+    "coverageReporters": [
+      "html"
+    ]
+  },
+  "directories": {
+    "lib": "./src",
+    "test": "./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anonymity94/junit-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anonymity94/junit-demo/issues"
+  },
+  "homepage": "https://github.com/Anonymity94/junit-demo#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "@types/jest": "^24.0.19",
+    "expect.js": "^0.3.1",
+    "jest": "^24.9.0",
+    "jest-extended": "^0.11.2",
+    "mocha": "^6.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
